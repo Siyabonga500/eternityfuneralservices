@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funeral Scheme - Terms & Conditions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header & Navigation */
+        .main-header {
+            background: linear-gradient(to right, #2c3e50, #4a6491);
+            color: white;
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            width: 60px;
+            height: 50px;
+            
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .logo-text h1 {
+            font-size: 1.4rem;
+            color: white;
+            margin: 0;
+        }
+        
+        .logo-text p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+        
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 0;
+            position: relative;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            left: 0;
+            bottom: 0;
+            transition: width 0.3s;
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        
+        .page-header {
+            background: linear-gradient(to right, #2c3e50, #4a6491);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .page-logo {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .page-title {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+        }
+        
+        .terms-list {
+            list-style-type: none;
+        }
+        
+        .term-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9fafc;
+            border-radius: 8px;
+            border-left: 4px solid #4a6491;
+            transition: all 0.3s ease;
+        }
+        
+        .term-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .term-number {
+            display: inline-block;
+            background-color: #4a6491;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 32px;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        
+        .term-title {
+            display: inline-block;
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        
+        .term-details {
+            padding-left: 47px;
+            color: #555;
+        }
+        
+        .highlight {
+            background-color: #fffacd;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: 600;
+            color: #d35400;
+        }
+        
+        .warning {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+        
+        .language-note {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .footer {
+            background-color: #f1f5f9;
+            padding: 25px 40px;
+            text-align: center;
+            border-top: 1px solid #eaeaea;
+            color: #666;
+        }
+        
+        .acknowledgement {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border: 1px solid #cce5ff;
+        }
+        
+        .acknowledgement h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 10px 0;
+            }
+            
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.2rem;
+            }
+            
+            .logo-text p {
+                font-size: 0.75rem;
+            }
+            
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #2c3e50;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            nav.active {
+                display: block;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav ul li a {
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .container {
+                margin: 15px;
+            }
+            
+            .page-header {
+                padding: 30px 20px;
+            }
+            
+            .page-title {
+                font-size: 1.8rem;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+            
+            .term-item {
+                padding: 15px;
+            }
+            
+            .term-details {
+                padding-left: 40px;
+            }
+            
+            .footer {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-container {
+                gap: 10px;
+            }
+            
+            .logo-icon {
+                width: 35px;
+                height: 35px;
+            }
+            
+            .logo-text h1 {
+                font-size: 1rem;
+            }
+            
+            .page-title {
+                font-size: 1.5rem;
+            }
+            
+            .term-number {
+                width: 28px;
+                height: 28px;
+                line-height: 28px;
+                font-size: 0.9rem;
+            }
+            
+            .term-title {
+                font-size: 1.1rem;
+            }
+            
+            .term-details {
+                padding-left: 35px;
+                font-size: 0.95rem;
+            }
+        }
+        
+        @media print {
+            .main-header {
+                display: none;
+            }
+            
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                margin: 0;
+            }
+            
+            .term-item:hover {
+                transform: none;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Header with Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="Images/Logo.jpg" alt="Eternity Funeral Services Logo" class="logo-icon">
+                <div class="logo-text">
+                    <h1>Eternity Funeral Services</h1>
+                  
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="page-header">
+            <div class="page-logo">
+                <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <h1 class="page-title">Funeral Scheme</h1>
+            <p class="subtitle">Terms and Conditions of Membership</p>
+        </div>
+        
+        <div class="content">
+            <h2 class="section-title">Membership Agreement</h2>
+            
+            <ul class="terms-list">
+                <li class="term-item">
+                    <span class="term-number">1</span>
+                    <span class="term-title">Fees and Registration</span>
+                    <div class="term-details">
+                        A non-refundable joining and administration fee of <span class="highlight">R100</span> is payable upon registration.
+                    </div>
+                </li>
+                
+                <li class="term-item">
+                    <span class="term-number">2</span>
+                    <span class="term-title">Waiting Period</span>
+                    <div class="term-details">
+                        A general waiting period of <span class="highlight">six (6) months</span> applies to all new members and except members joining from another funeral parlour.
+                        <br><br>
+                        <strong>Exception:</strong> This waiting period <strong>does not apply</strong> in the case of death resulting from an accident.
+                    </div>
+                </li>
+                
+                <li class="term-item">
+                    <span class="term-number">3</span>
+                    <span class="term-title">Coverage and Benefits</span>
+                    <div class="term-details">
+                        All covered members are entitled to a burial service which includes a <span class="highlight">casket</span>.
+                        <br><br>
+                        One primary policy can cover up to <span class="highlight">ten (10) members</span> in total. This total may include a maximum of <span class="highlight">four (4) extended family members</span>. An additional premium of <span class="highlight">R30</span> applies per extended family member added to the cover.
+                        <br><br>
+                        An additional premium of <span class="highlight">R50</span> is payable monthly for <span class="highlight">each member aged 65 years and above</span>.
+                    </div>
+                </li>
+                
+                <li class="term-item">
+                    <span class="term-number">4</span>
+                    <span class="term-title">Premium Payments</span>
+                    <div class="term-details">
+                        The <span class="highlight">last day for premium payment</span> is the <span class="highlight">7th day of every month</span>.
+                        <br><br>
+                        <span class="warning">Important:</span> It is mandatory not to miss any monthly payment. Failure to pay premiums for <span class="highlight">two (2) consecutive months</span> will result in the <span class="warning">cancellation of membership</span> and the forfeiture of all benefits.
+                        <br><br>
+                        <span class="warning">No service will be rendered, nor any payout made, if premiums are in arrears for two (2) consecutive months.</span>
+                        <div class="language-note">"Asikungcwabeli uma ungazikhokhelanga izinyanga ezimbili zilandelana."</div>
+                    </div>
+                </li>
+                
+                <li class="term-item">
+                    <span class="term-number">5</span>
+                    <span class="term-title">Specific Claims Provisions</span>
+                    <div class="term-details">
+                        <strong>Stillborn:</strong> The service will be treated as a private arrangement.
+                        <br><br>
+                        <strong>Children (10 years and younger):</strong> A half-service will be rendered. <span class="warning">No sheep</span> will be provided.
+                        <br><br>
+                        <strong>Suicide:</strong> A death by suicide is only covered if the member has been with the scheme for <span class="highlight">more than twelve (12) consecutive months</span> prior to the date of death.
+                    </div>
+                </li>
+                
+                <li class="term-item">
+                    <span class="term-number">6</span>
+                    <span class="term-title">Exclusive Service Clause</span>
+                    <div class="term-details">
+                        Members and their covered dependents <span class="warning">must not be covered by any other funeral service policy or scheme</span>. If a member is buried or receives funeral services from another provider, <span class="warning">no service or payout will be rendered by this scheme under any circumstances.</span>
+                        <div class="language-note">"Uma uzongcwatshelwa omunye umasingcwabiswane, thina asikhiphi lutho."</div>
+                    </div>
+                </li>
+                
+                <li class="term-item">
+                    <span class="term-number">7</span>
+                    <span class="term-title">General</span>
+                    <div class="term-details">
+                        These terms and conditions constitute the entire agreement between the member and the scheme.
+                        <br><br>
+                        The scheme reserves the right to amend these terms and conditions with reasonable notice to members.
+                    </div>
+                </li>
+            </ul>
+            
+            <div class="acknowledgement">
+                <h3><i class="fas fa-exclamation-circle"></i> Important Acknowledgement</h3>
+                <p>By joining this funeral scheme, you acknowledge that you have read, understood, and agreed to be bound by all the above Terms and Conditions.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; <span id="currentYear"></span> Eternity (For Eternity) Pty Ltd. All rights reserved.</p>
+            <p>For inquiries, please contact our offices during business hours.</p>
+            <a href="index.html" style="color: #4a6491; text-decoration: none; margin-top: 10px; display: inline-block;">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            const icon = this.querySelector('i');
+            if (mainNav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!mainNav.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
+                mainNav.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Add highlight functionality to term items
+        const termItems = document.querySelectorAll('.term-item');
+        termItems.forEach(item => {
+            item.addEventListener('click', function() {
+                this.style.backgroundColor = this.style.backgroundColor === 'rgb(255, 250, 205)' ? '#f9fafc' : '#fffacd';
+            });
+        });
+    </script>
+</body>
+</html>
