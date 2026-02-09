@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternity Funeral Services - Dignity, Respect & Financial Protection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        :root {
+            --primary: #2c3e50;
+            --secondary: #8e7437;
+            --accent: #d4af37;
+            --light: #f8f9fa;
+            --dark: #1a1a1a;
+            --gray: #6c757d;
+            --success: #28a745;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .highlight {
+            color: var(--accent);
+        }
+
+        /* Navigation */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            color: var(--primary);
+            margin-left: 10px;
+        }
+
+        .logo-icon {
+            color: var(--accent);
+            font-size: 28px;
+        }
+
+        .logo img {
+            height: 30px;
+            width: auto;
+            margin-right: 5px;
+            border-radius: 4px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li a {
+            font-weight: 600;
+            color: var(--primary);
+            position: relative;
+            padding: 5px 0;
+            margin-left: 5px;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            left: 0;
+            bottom: 0;
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary);
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* Hero Section */
+        .hero {
+                background-image: url("images/Casket 2.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                color: white;
+                padding: 120px 20px;
+
+
+            /*background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1580338450485-4ecad8d45b72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;*/
+            text-align: center;
+            padding: 180px 20px 100px;
+            margin-top: 70px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: rgb(122, 131, 45);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Plans Section */
+        .plans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .plan {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .plan:hover {
+            transform: translateY(-10px);
+        }
+
+        .plan-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .plan-header h3 {
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .plan-price span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .plan-badge {
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background-color: var(--accent);
+            color: white;
+            padding: 8px 35px;
+            transform: rotate(45deg);
+            font-weight: 600;
+            font-size: 0.8rem;
+            z-index: 1;
+        }
+
+        .plan-body {
+            padding: 30px;
+        }
+
+        .plan-feature {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .plan-feature i {
+            color: var(--success);
+            margin-right: 10px;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+
+        .feature-category {
+            margin-top: 25px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            color: var(--secondary);
+        }
+
+        /* Partnership Section */
+        .partnership {
+            background-color: var(--light);
+        }
+
+        .partnership-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .partnership-text {
+            flex: 1;
+        }
+
+        .partnership-image {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .partnership-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .financial-projection {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            overflow-x: auto;
+        }
+
+        .projection-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            min-width: 300px;
+        }
+
+        .projection-table th, .projection-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .projection-table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+
+        /* Why Choose Us */
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 40px;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        /* Mission & Vision */
+        .mission-vision {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .mission-vision h2, .mission-vision h3 {
+            color: white;
+        }
+
+        .mission-vision-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .mission-card, .vision-card {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .mission-card i, .vision-card i {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            background-color: #f8f9fa;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-form {
+            flex: 1;
+        }
+
+        .contact-details {
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: var(--secondary);
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea, form select {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+        }
+
+        form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .footer-links h4, .footer-contact h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+            transition: all 0.3s;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* Equipment Section Styles */
+        .equipment-section {
+            background-color: #f5f7fa;
+            padding: 80px 0;
+        }
+
+        .equipment-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        .equipment-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .equipment-header p {
+            font-size: 1.1rem;
+            color: var(--gray);
+        }
+
+        /* Categories Filter */
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .category-btn {
+            padding: 10px 20px;
+            background: white;
+            border: 2px solid var(--primary);
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .category-btn.active,
+        .category-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Equipment Grid */
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .equipment-item {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-top: 5px solid var(--primary);
+        }
+
+        .equipment-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .equipment-icon {
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .equipment-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .equipment-category {
+            display: inline-block;
+            padding: 5px 12px;
+            background: #e8f4fc;
+            color: var(--primary);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Category Colors */
+        .venue {
+            border-top-color: #2c3e50;
+        }
+
+        .furniture {
+            border-top-color: #3498db;
+        }
+
+        .kitchen {
+            border-top-color: #e74c3c;
+        }
+
+        .ceremony {
+            border-top-color: #9b59b6;
+        }
+
+        .logistics {
+            border-top-color: #1abc9c;
+        }
+
+        .memorial {
+            border-top-color: #f39c12;
+        }
+
+        /* Stats */
+        .stats {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-top: 40px;
+        }
+
+        .stats h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        /* Service Items */
+        .service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 8px;
+            background-color: #f9fafc;
+            border-radius: 5px;
+        }
+
+        .service-item i {
+            font-size: 24px;
+            color: var(--primary);
+            margin-right: 10px;
+        }
+
+        /* Responsive Design - Mobile First Approach */
+        @media (max-width: 1200px) {
+            .container {
+                padding: 0 30px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .partnership-content, .mission-vision-content, .contact-container {
+                flex-direction: column;
+            }
+
+            .partnership-image, .mission-card, .vision-card, .contact-info, .contact-form {
+                width: 100%;
+            }
+
+            .partnership-image {
+                order: -1;
+            }
+
+            .mission-vision-content {
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(255, 255, 255, 0.98);
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                transform: translateX(-100%);
+                opacity: 0;
+                transition: all 0.3s ease;
+                z-index: 999;
+                overflow-y: auto;
+                padding-top: 80px;
+            }
+
+            nav.active {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 15px 0;
+                width: 100%;
+                justify-content: center;
+            }
+
+            nav ul li a {
+                font-size: 1.1rem;
+                padding: 10px 20px;
+            }
+
+            .hero {
+                padding: 150px 20px 80px;
+                margin-top: 60px;
+            }
+
+            .hero h1 {
+                font-size: 2.3rem;
+                line-height: 1.3;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .plans {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .plan {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .plan-badge {
+                right: -35px;
+                padding: 6px 30px;
+                font-size: 0.7rem;
+            }
+
+            .section-title {
+                margin-bottom: 40px;
+            }
+
+            .section-title:after {
+                width: 60px;
+            }
+
+            .benefits {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .equipment-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 120px 15px 60px;
+                margin-top: 60px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 10px 25px;
+                font-size: 15px;
+            }
+
+            .plan-header {
+                padding: 20px 15px;
+            }
+
+            .plan-header h3 {
+                font-size: 1.5rem;
+            }
+
+            .plan-price {
+                font-size: 2rem;
+            }
+
+            .plan-body {
+                padding: 20px 15px;
+            }
+
+            .plan-badge {
+                right: -40px;
+                padding: 5px 25px;
+                font-size: 0.65rem;
+            }
+
+            .equipment-header h1 {
+                font-size: 2rem;
+            }
+
+            .categories {
+                gap: 10px;
+                margin-bottom: 30px;
+            }
+
+            .category-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            .equipment-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .equipment-item {
+                padding: 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .stat-number {
+                font-size: 1.8rem;
+            }
+
+            .faq-question {
+                padding: 15px;
+                font-size: 0.95rem;
+            }
+
+            .faq-answer {
+                padding: 0 15px;
+            }
+
+            .faq-item.active .faq-answer {
+                padding: 15px;
+            }
+
+            .contact-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                margin-right: 10px;
+            }
+
+            .footer-links ul li a {
+                font-size: 0.95rem;
+            }
+
+            .copyright {
+                font-size: 0.9rem;
+                padding-top: 20px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .logo h1 {
+                font-size: 1.1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .plan-badge {
+                right: -45px;
+                padding: 4px 20px;
+                font-size: 0.6rem;
+            }
+
+            .plan-price {
+                font-size: 1.8rem;
+            }
+
+            .projection-table th, .projection-table td {
+                padding: 8px 10px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 350px) {
+            .equipment-icon {
+                font-size: 2.8rem;
+                height: 60px;
+            }
+
+            .equipment-name {
+                font-size: 1.1rem;
+            }
+
+            .benefit-card {
+                padding: 20px 15px;
+            }
+
+            .benefit-icon {
+                font-size: 35px;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .mobile-menu-btn,
+            nav ul li a i,
+            .btn,
+            .category-btn,
+            .equipment-item:hover,
+            .plan:hover,
+            .benefit-card:hover {
+                display: none !important;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+
+            section {
+                padding: 40px 0;
+            }
+
+            .hero {
+                background: none;
+                color: black;
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                color: black;
+            }
+
+            .plan, .benefit-card, .faq-item, .equipment-item {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary: #000000;
+                --secondary: #000000;
+                --accent: #000000;
+            }
+
+            .btn, .plan-header {
+                border: 2px solid black;
+            }
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            .plan:hover, .benefit-card:hover, .equipment-item:hover {
+                transform: none;
+            }
+        }
+                .logo-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 4px;
+            object-fit: contain; /* or 'cover' depending on your preference */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-container container">
+            <div class="logo">
+                 <img src="Images/Logo.jpg" alt="Eternity Funeral Services Logo" class="logo-icon">
+
+                <h1>Eternity Funeral Services</h1>
+            </div>
+
+           
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav" aria-label="Main navigation">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#plans">Plans</a>
+                    </li>
+                  
+                    <li>
+                        <a href="#resources">Free Resources</a>
+                    </li>
+                    <li>
+                        <a href="#partnership">Partnership</a>
+                    </li>
+                    <li>
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="terms.html">Terms</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Dignity, Respect & Financial Protection</h1>
+            <p>
+                Providing compassionate funeral services and comprehensive financial protection for your family during difficult times. Partnering with <b>African Gospel Church (AGC)</b> to support community development.
+            </p>
+            <a href="#plans" class="btn">View Our Plans</a>
+        </div>
+    </section>
+
+    <!-- Funeral Plans Section -->
+    <section class="container" id="plans">
+        <h2 class="section-title">Our Funeral Service Plans</h2>
+        <div class="plans">
+            <!-- Silver Plan -->
+            <div class="plan">
+                <div class="plan-badge">Popular</div>
+                <div class="plan-header">
+                    <h3>Silver Plan</h3>
+                    <div class="plan-price">R170<span>/month (Family)</span></div>
+                    <div class="plan-price">R130<span>/month (Single)</span></div>
+                </div>
+                <div class="plan-body">
+                    <h4 class="feature-category">Main Member & Spouse</h4>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Quality casket included</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Wooden grave cross</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cash benefit: R3,000</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Airtime: R100</span>
+                    </div>
+
+                    <h4 class="feature-category">Children & Extended Family</h4>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Casket included</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Wooden grave cross</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cash benefit: R2,000</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Airtime: R100</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Golden Plan -->
+            <div class="plan">
+                <div class="plan-badge">Golden</div>
+                <div class="plan-header">
+                    <h3>Golden Plan</h3>
+                    <div class="plan-price">R210<span>/month (Family)</span></div>
+                    <div class="plan-price">R160<span>/month (Single)</span></div>
+                </div>
+                <div class="plan-body">
+                    <h4 class="feature-category">Main Member & Spouse</h4>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Premium casket included</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Wooden grave cross</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Igusha (Sheep): R1,500</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cash benefit: R4,000</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Airtime: R100</span>
+                    </div>
+
+                    <h4 class="feature-category">Children & Extended Family</h4>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Casket included</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Wooden grave cross</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cash benefit: R3,000</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Airtime: R150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premier Plan -->
+            <div class="plan">
+                <div class="plan-badge">Premium</div>
+                <div class="plan-header">
+                    <h3>Premier Plan</h3>
+                    <div class="plan-price">R250<span>/month (Family)</span></div>
+                    <div class="plan-price">R190<span>/month (Single)</span></div>
+                </div>
+                <div class="plan-body">
+                    <h4 class="feature-category">Main Member & Spouse</h4>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Premium casket included</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Wooden grave cross</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Tombstone: R2,500</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Inkomo (cow): R8,000</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cash benefit: R5,000</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Airtime: R150</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Mobile Fridge: R20</span>
+                    </div>
+
+                    <h4 class="feature-category">Children & Extended Family</h4>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Casket included</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Wooden grave cross</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Igusha (sheep): R1,500</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cash benefit: R4,000</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Airtime: R150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Royal Plan -->
+            <div class="plan">
+                <div class="plan-badge">Royal</div>
+                <div class="plan-header">
+                    <h3>Royal Plan</h3>
+                    <div class="plan-price">R330<span>/month (Family)</span></div>
+                    <div class="plan-price">R240<span>/month (Single)</span></div>
+                </div>
+                <div class="plan-body">
+                    <h4 class="feature-category">Main Member & Spouse</h4>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Dome included</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Tombstone: R2,500</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Photo slide show</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Inkomo (cow): R8,000</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cash benefit: R6,000</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Airtime: R250</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Mobile Fridge</span>
+                    </div>
+
+                    <h4 class="feature-category">Children & Extended Family</h4>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Mini Dome included</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Tombstone Head only: R1,500</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Igusha (sheep): R1,500</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cash benefit: R5,000</span>
+                    </div>
+                    <div class="plan-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Airtime: R200</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="partnership" id="partnership">
+        <div class="container">
+            <h2 class="section-title">Partnership with <span class="highlight">AGC</span></h2>
+            <div class="partnership-content">
+                <div class="partnership-text">
+                    <h3>Creating Sustainable Income for Church Development</h3>
+                    <p>Eternity Funeral Services (Pty Ltd) is partnering with <b>African Gospel Church (AGC)</b> to create a sustainable source of income for the church while providing valuable financial protection to members.</p>
+
+                    <p>The church currently relies solely on offerings to finance important services such as youth conventions, Sunday school training, and development projects. Our partnership will help the church meet its financial needs without reducing essential services.</p>
+
+                    <p><strong>How it works:</strong> We add 15% to each policy premium (e.g., R150 + 15%), and this additional amount is collected for the church. This creates a win-win situation where members receive quality funeral cover while supporting church development.</p>
+
+                    <div class="financial-projection">
+                        <h4>Financial Projections for AGC</h4>
+                        <table class="projection-table">
+                            <thead>
+                                <tr>
+                                    <th>Members</th>
+                                    <th>Monthly Income (15%)</th>
+                                    <th>Annual Income</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1,000 members</td>
+                                    <td>R30,000</td>
+                                    <td>R360,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2,500 members</td>
+                                    <td>R75,000</td>
+                                    <td>R900,000</td>
+                                </tr>
+                                <tr>
+                                    <td>5,000 members</td>
+                                    <td>R150,000</td>
+                                    <td>R1.8 million</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p style="margin-top: 15px; font-style: italic;">This sustainable income can help finance tremendous church activities and expand its outreach.</p>
+                    </div>
+                </div>
+                <div class="partnership-image">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Community gathering">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="container">
+        <h2 class="section-title">Why Choose Eternity Funeral Services</h2>
+        <div class="benefits">
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <h3>Compassionate Service</h3>
+                <p>We provide dignified and respectful funeral services with empathy and understanding during your time of need.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Financial Security</h3>
+                <p>Our plans offer comprehensive financial protection, ensuring your family is not burdened during difficult times.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-church"></i>
+                </div>
+                <h3>Church Partnership</h3>
+                <p>By choosing our services, you directly support AGC church development and community programs.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Our dedicated team is available around the clock to assist with claims and provide support when you need it most.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="equipment-section" id="resources">
+        <div class="container">
+            <div class="equipment-header">
+                <h1><i class="fas fa-ribbon"></i> Free Funeral Services Equipment</h1>
+                <p>Complete setup provided for dignified funeral services</p>
+            </div>
+
+            <!-- Categories Filter -->
+            <div class="categories">
+                <button class="category-btn active" data-category="all">All Equipment</button>
+                <button class="category-btn" data-category="venue">Venue Setup</button>
+                <button class="category-btn" data-category="furniture">Furniture</button>
+                <button class="category-btn" data-category="kitchen">Kitchen & Dining</button>
+                <button class="category-btn" data-category="ceremony">Ceremony</button>
+                <button class="category-btn" data-category="logistics">Logistics</button>
+                <button class="category-btn" data-category="memorial">Memorial</button>
+            </div>
+
+            <!-- Equipment Grid -->
+            <div class="equipment-grid">
+                <!-- 1. Poles/Tent -->
+                <div class="equipment-item venue">
+                    <div class="equipment-icon">
+                        <i class="fas fa-campground"></i>
+                    </div>
+                    <div class="equipment-name">2 Poles Tent</div>
+                    <div class="equipment-category">Venue Setup</div>
+                </div>
+
+                <!-- 2. Tables -->
+                <div class="equipment-item furniture">
+                    <div class="equipment-icon">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <div class="equipment-name">2 Tables</div>
+                    <div class="equipment-category">Furniture</div>
+                </div>
+
+                <!-- 3. Chairs -->
+                <div class="equipment-item furniture">
+                    <div class="equipment-icon">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <div class="equipment-name">100 Chairs</div>
+                    <div class="equipment-category">Furniture</div>
+                </div>
+
+                <!-- 4. Pots -->
+                <div class="equipment-item kitchen">
+                    <div class="equipment-icon">
+                        <i class="fas fa-bowl-food"></i>
+                    </div>
+                    <div class="equipment-name">3 Cooking Pots</div>
+                    <div class="equipment-category">Kitchen & Dining</div>
+                </div>
+
+                <!-- 5. Gas Stove -->
+                <div class="equipment-item kitchen">
+                    <div class="equipment-icon">
+                        <i class="fas fa-fire-burner"></i>
+                    </div>
+                    <div class="equipment-name">Gas Stove</div>
+                    <div class="equipment-category">Kitchen & Dining</div>
+                </div>
+
+                <!-- 6. Gas Cylinder -->
+                <div class="equipment-item kitchen">
+                    <div class="equipment-icon">
+                        <i class="fas fa-gas-pump"></i>
+                    </div>
+                    <div class="equipment-name">Gas Cylinder</div>
+                    <div class="equipment-category">Kitchen & Dining</div>
+                </div>
+
+                <!-- 7. Plates -->
+                <div class="equipment-item kitchen">
+                    <div class="equipment-icon">
+                        <i class="fas fa-plate-wheat"></i>
+                    </div>
+                    <div class="equipment-name">100 Plates</div>
+                    <div class="equipment-category">Kitchen & Dining</div>
+                </div>
+
+                <!-- 8. Spoons -->
+                <div class="equipment-item kitchen">
+                    <div class="equipment-icon">
+                        <i class="fas fa-utensil-spoon"></i>
+                    </div>
+                    <div class="equipment-name">100 Spoons</div>
+                    <div class="equipment-category">Kitchen & Dining</div>
+                </div>
+
+                <!-- 9. Copies of Programmes -->
+                <div class="equipment-item ceremony">
+                    <div class="equipment-icon">
+                        <i class="fas fa-copy"></i>
+                    </div>
+                    <div class="equipment-name">100 Programme Copies</div>
+                    <div class="equipment-category">Ceremony</div>
+                </div>
+
+                <!-- 10. A4 Enlarged Framed Photo -->
+                <div class="equipment-item memorial">
+                    <div class="equipment-icon">
+                        <i class="fas fa-portrait"></i>
+                    </div>
+                    <div class="equipment-name">Framed Photo (A4)</div>
+                    <div class="equipment-category">Memorial</div>
+                </div>
+
+                <!-- 11. Family Tent -->
+                <div class="equipment-item venue">
+                    <div class="equipment-icon">
+                        <i class="fas fa-people-roof"></i>
+                    </div>
+                    <div class="equipment-name">Family Tent</div>
+                    <div class="equipment-category">Venue Setup</div>
+                </div>
+
+                <!-- 12. Sound System -->
+                <div class="equipment-item ceremony">
+                    <div class="equipment-icon">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <div class="equipment-name">Sound System</div>
+                    <div class="equipment-category">Ceremony</div>
+                </div>
+
+                <!-- 13. Decoration -->
+                <div class="equipment-item ceremony">
+                    <div class="equipment-icon">
+                        <i class="fas fa-ribbon"></i>
+                    </div>
+                    <div class="equipment-name">Decoration</div>
+                    <div class="equipment-category">Ceremony</div>
+                </div>
+
+                <!-- 14. Green Carpets -->
+                <div class="equipment-item venue">
+                    <div class="equipment-icon">
+                        <i class="fas fa-rug"></i>
+                    </div>
+                    <div class="equipment-name">Green Carpets</div>
+                    <div class="equipment-category">Venue Setup</div>
+                </div>
+
+                <!-- 15. Lowering Device -->
+                <div class="equipment-item logistics">
+                    <div class="equipment-icon">
+                        <i class="fas fa-elevator"></i>
+                    </div>
+                    <div class="equipment-name">Lowering Device</div>
+                    <div class="equipment-category">Logistics</div>
+                </div>
+
+                <!-- 16. Amakhaza -->
+                <div class="equipment-item logistics">
+                    <div class="equipment-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <div class="equipment-name">Mortuary</div>
+                    <div class="equipment-category">Logistics</div>
+                </div>
+
+                <!-- 17. Body Removal -->
+                <div class="equipment-item logistics">
+                    <div class="equipment-icon">
+                        <i class="fas fa-dolly-flatbed"></i>
+                    </div>
+                    <div class="equipment-name">Body Removal</div>
+                    <div class="equipment-category">Logistics</div>
+                </div>
+
+                <!-- 18. Hearse -->
+                <div class="equipment-item logistics">
+                    <div class="equipment-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <div class="equipment-name">Hearse</div>
+                    <div class="equipment-category">Logistics</div>
+                </div>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="stats">
+                <h3><i class="fas fa-chart-bar"></i> Equipment Summary</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">18</div>
+                        <div>Total Equipment Items</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7</div>
+                        <div>Categories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div>Venue Setup Items</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5</div>
+                        <div>Kitchen & Dining Items</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision" id="about">
+        <div class="container">
+            <h2 class="section-title">Our Mission & Vision</h2>
+            <div class="mission-vision-content">
+                <div class="mission-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Our Vision</h3>
+                    <p>To be the most preferred and trustworthy funeral service provider that all families can rely on in times of need and loss of a family member.</p>
+                </div>
+                <div class="vision-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Our Mission</h3>
+                    <p>Reducing the stress and worry of bereaved families by taking funeral preparations as our responsibility, providing hope, love, empathy, and financial solutions for all stakeholders.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 50px; background: rgba(255,255,255,0.1); padding: 25px; border-radius: 8px;">
+                <h3>Trading as: Iphakade Funeral Services</h3>
+                <p>Registered company name: <strong>Elernity (For Eternity) Pty Ltd</strong></p>
+                <p>We operate as an independent entity to ensure policyholder security regardless of changes in leadership or ownership.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What happens if a member moves to another church group?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Eternity Funeral Services (Pty Ltd) is an independent entity and not dependent on the church or its owners. Your policy remains valid and secure regardless of your church affiliation changes. The partnership with AGC is for mutual benefit, but your coverage is with our company directly.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Where and how do I pay my premiums?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Premiums can be paid through multiple convenient channels:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Directly at our branch offices</li>
+                        <li>Bank deposits (using your unique reference number)</li>
+                        <li>Electronic funds transfer (EFT)</li>
+                        <li>Debit order facilities (available on request)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is the waiting period for claims?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer minimal waiting periods compared to industry standards:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Natural causes: 6 months waiting period</li>
+                        <li>Accidental death: Covered from day 1</li>
+                        <li>Extended family members: 12 months waiting period</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I submit a claim?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Claims can be submitted 24/7 through our dedicated claims line. You'll need to provide:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Death certificate</li>
+                        <li>Policyholder ID document</li>
+                        <li>Completed claim form</li>
+                        <li>Banking details for beneficiary</li>
+                    </ul>
+                    <p>Our claims team will guide you through the entire process with compassion and efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>We're here to help you with any questions about our funeral plans, partnership opportunities, or claims process.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone/Whatsapp</h4>
+                                <p>+27 72 174 7085</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>mthmbbongani@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Office Address</h4>
+                                <p>123 Compassion Street, Port Shepstone, 0001</p>
+                                <p>South Coast, KwaZulu Natal, South Africa</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Operating Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                <p>Emergency Claims: 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form action="https://formsubmit.co/siya61512@gmail.com amethod='POST'">
+
+                    </form>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="quote">Request a Quote</option>
+                                <option value="claim">Claims Assistance</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Eternity Funeral Services</h3>
+                    <p>Trading as Iphakade Funeral Services</p>
+                    <p>Providing dignity, respect, and financial protection since 2025.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#plans">Funeral Plans</a></li>
+                        <li><a href="#partnership">AGC Partnership</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +27 12 345 6789</p>
+                    <p><i class="fas fa-envelope"></i> info@eternityfunerals.co.za</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Compassion Street, Pretoria</p>
+                    <div style="margin-top: 20px;">
+                        <p><strong>Claims Emergency Line:</strong> 0800 123 456</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Elernity (For Eternity) Pty Ltd. All rights reserved. | Reg No: 2025/123456/07</p>
+                <p style="margin-top: 10px;">Partnering with AGC for community development</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            mobileMenuBtn.innerHTML = mainNav.classList.contains('active')
+                ? '<i class="fas fa-times"></i>'
+                : '<i class="fas fa-bars"></i>';
+            
+            // Prevent body scroll when menu is open on mobile
+            document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Close menu when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && 
+                !e.target.closest('nav') && 
+                !e.target.closest('.mobile-menu-btn') &&
+                mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                document.body.style.overflow = '';
+            }
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                });
+                
+                // Toggle current item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offset = 70; // Height of fixed header
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value;
+            const phone = document.getElementById('phone').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // Basic validation
+            if (!name || !email || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            // In a real implementation, you would send this data to a server
+            // For now, we'll show a success message
+            alert(`Thank you, ${name}! Your message has been sent successfully. We'll contact you at ${email} regarding your inquiry.`);
+
+            // Reset form
+            this.reset();
+        });
+
+        // Equipment filtering functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const equipmentItems = document.querySelectorAll('.equipment-item');
+
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const category = this.getAttribute('data-category');
+
+                    // Show/hide equipment items based on category
+                    equipmentItems.forEach(item => {
+                        if (category === 'all') {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                            }, 10);
+                        } else {
+                            const itemCategory = item.classList[1];
+                            if (itemCategory === category) {
+                                item.style.display = 'block';
+                                setTimeout(() => {
+                                    item.style.opacity = '1';
+                                }, 10);
+                            } else {
+                                item.style.opacity = '0';
+                                setTimeout(() => {
+                                    item.style.display = 'none';
+                                }, 300);
+                            }
+                        }
+                    });
+                });
+            });
+
+            // Handle login and terms links (in a real app, these would redirect to actual pages)
+            document.getElementById('loginLink').addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Login functionality would be implemented here. In a real application, this would redirect to a login page.');
+            });
+
+            document.getElementById('termsLink').addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Terms and conditions page would open here. In a real application, this would redirect to the terms page.');
+            });
+
+            // Add touch events for mobile
+            if ('ontouchstart' in window) {
+                // Add touch-specific styles or behaviors if needed
+                document.body.classList.add('touch-device');
+            }
+
+            // Handle orientation changes
+            window.addEventListener('orientationchange', function() {
+                // Close mobile menu on orientation change
+                if (window.innerWidth > 768) {
+                    mainNav.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            // Close mobile menu when resizing to larger screen
+            if (window.innerWidth > 768 && mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+</body>
+</html>
